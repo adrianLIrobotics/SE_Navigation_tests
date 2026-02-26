@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Analogy 3 full map",
+    "m_pred": {
+      "Efficiency": 0.35,
+      "Safety": 0.92,
+      "TaskCompletion": 0.95
+    },
+    "m_obs": {
+      "Efficiency": 1.0,
+      "Safety": 0.042,
+      "TaskCompletion": 1.0
+    }
+  }
+]

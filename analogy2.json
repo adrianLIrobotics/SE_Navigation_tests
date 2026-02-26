@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Analogy 2 — partial map + allow_unknown",
+    "m_pred": {
+      "Efficiency": 0.65,
+      "Safety": 0.55,
+      "TaskCompletion": 0.75
+    },
+    "m_obs": {
+      "Efficiency": 0.0,
+      "Safety": 0.0,
+      "TaskCompletion": 1.0
+    }
+  }
+]

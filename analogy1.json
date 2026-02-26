@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Analogy 1 — analogical map (center likely clear)",
+    "m_pred": {
+      "Efficiency": 0.85,
+      "Safety": 0.8,
+      "TaskCompletion": 0.9
+    },
+    "m_obs": {
+      "Efficiency": 0.624,
+      "Safety": 1.0,
+      "TaskCompletion": 1.0
+    }
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "meta_names": [
+    "Efficiency",
+    "Safety",
+    "TaskCompletion"
+  ],
+  "gamma": -0.4,
+  "p0": 0.5,
+  "target": {
+    "w_T": [
+      0.25,
+      0.45,
+      0.3
+    ],
+    "c_T": [
+      0.4,
+      0.2,
+      1.0,
+      1.0
+    ]
+  },
+  "policies": [
+    {
+      "name": "Analogy 3 full map",
+      "m_hat": {
+        "Efficiency": 0.35,
+        "Safety": 0.92,
+        "TaskCompletion": 0.95
+      },
+      "c_B": [
+        0.4,
+        0.2,
+        1.0,
+        1.0
+      ],
+      "kappa": {
+        "Efficiency": 0.85,
+        "Safety": 0.8,
+        "TaskCompletion": 0.85
+      },
+      "justification": "full map",
+      "m_obs": {
+        "Efficiency": 1.0,
+        "Safety": 0.042,
+        "TaskCompletion": 1.0
+      }
+    }
+  ],
+  "trust_model": {
+    "taus": {
+      "Efficiency": 0.2,
+      "Safety": 0.2,
+      "TaskCompletion": 0.2
+    },
+    "p_match_T": 0.8,
+    "p_match_D": 0.3,
+    "T": [
+      [
+        0.85,
+        0.15
+      ],
+      [
+        0.2,
+        0.8
+      ]
+    ]
+  },
+  "weight_update": {
+    "enable": true,
+    "phi": 1.0,
+    "rigidity": 0.0
+  }
+}

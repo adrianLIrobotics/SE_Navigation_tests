@@ -1,0 +1,132 @@
+{
+  "meta_names": [
+    "Efficiency",
+    "Safety",
+    "TaskCompletion"
+  ],
+  "gamma": -0.4,
+  "p0": 0.5,
+  "target": {
+    "w_T": {
+      "Efficiency": 0.25,
+      "Safety": 0.45,
+      "TaskCompletion": 0.3
+    },
+    "c_T": [
+      0.4,
+      0.2,
+      1.0,
+      1.0
+    ]
+  },
+  "trust_model": {
+    "taus": {
+      "Efficiency": 0.2,
+      "Safety": 0.2,
+      "TaskCompletion": 0.2
+    },
+    "p_match_T": 0.8,
+    "p_match_D": 0.3,
+    "T": [
+      [
+        0.85,
+        0.15
+      ],
+      [
+        0.2,
+        0.8
+      ]
+    ]
+  },
+  "distance_weights": {
+    "alpha": 0.0,
+    "beta": 1.0,
+    "gamma": 0.0
+  },
+  "weight_update": {
+    "enable": true,
+    "phi": 1.0,
+    "rigidity": 0.0
+  },
+  "policies": [
+    {
+      "name": "Analogy 3 full map",
+      "justification": "full map",
+      "c_B": [
+        0.4,
+        0.2,
+        1.0,
+        1.0
+      ],
+      "pre": {
+        "D_pre": 0.0,
+        "m_hat": {
+          "Efficiency": 0.35,
+          "Safety": 0.92,
+          "TaskCompletion": 0.95
+        },
+        "ExM_hat": 0.7865,
+        "R_static_hat": 0.7399999999999999,
+        "kappa": {
+          "Efficiency": 0.85,
+          "Safety": 0.8,
+          "TaskCompletion": 0.85
+        },
+        "pT_local_init": {
+          "Efficiency": 0.425,
+          "Safety": 0.4,
+          "TaskCompletion": 0.425
+        },
+        "pT_global_init": 0.41375,
+        "SE_hat": 0.09091437499999999
+      },
+      "post": {
+        "m_obs": {
+          "Efficiency": 1.0,
+          "Safety": 0.042,
+          "TaskCompletion": 1.0
+        },
+        "ExM_obs": 0.5689,
+        "R_static_obs": 0.6806666666666666,
+        "pT_local_post": {
+          "Efficiency": 0.2062246278755074,
+          "Safety": 0.1957446808510638,
+          "TaskCompletion": 0.70801393728223
+        },
+        "pT_global_post": 0.35204544453652453,
+        "SE_obs": -0.058903168788561416,
+        "match": {
+          "Efficiency": false,
+          "Safety": false,
+          "TaskCompletion": true
+        },
+        "e": {
+          "Efficiency": 0.65,
+          "Safety": -0.878,
+          "TaskCompletion": 0.050000000000000044
+        },
+        "rho": {
+          "Efficiency": 0.2837932238910234,
+          "Safety": 0.690010478519036,
+          "TaskCompletion": 0.026196297589940645
+        },
+        "calibration": {
+          "delta_SE_minus_ExM": -0.6278031687885613,
+          "w_candidate": {
+            "Efficiency": 0.09125292205226307,
+            "Safety": 0.5485385001251689,
+            "TaskCompletion": 0.3602085778225681
+          },
+          "w_calibrated": {
+            "Efficiency": 0.09125292205226307,
+            "Safety": 0.5485385001251689,
+            "TaskCompletion": 0.3602085778225681
+          },
+          "ExM_obs_calibrated": 0.47450011688008825,
+          "pT_global_post_calibrated": 0.3812247869612921,
+          "SE_obs_calibrated": -0.06661887924476331
+        }
+      }
+    }
+  ]
+}
